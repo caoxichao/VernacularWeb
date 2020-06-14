@@ -1,4 +1,4 @@
-### Vue
+### Vue 
 ##### 1.Vuex
 1. state：vuex的基本数据，用来存储变量、
 
@@ -20,7 +20,9 @@
 3.	介绍下Object.defineProperty()方法
 	- Object.defineProperty(obj，prop，descriptor)，这个语法内有三个参数，分别为要定义其上属性的对象，要定义或者修改的属性，具体的改变方法
 	- 简单的说，就是用这个方法来定义一个值。当调用时我们使用了它里面的get方法，当我们给这个属性赋值时，又用到了它里面的set方法。
-```javascript
+```                                                                                                  
+                                                                                                  
+                                                                                                  ··-javascript
 	var obj = {};
 	Object.defineProperty(obj,"hello",{
 		get:function(){
@@ -31,3 +33,10 @@
 		}
 	})
 ```
+##### 4.vue组件间传递数据
+1.	props / $emit 适用父子组件通信
+2.	ref 与 $parent / $children 适用父子组件通信
+3.	EventBus($emit / $on) 适用于父子、隔代、兄弟组件通信
+4.	$attrs / $listeners 适用于隔代组件通信
+5.	provide / inject 适用于隔代组件通信
+6.	Vuex 适用于父子、隔代、兄弟组件通信

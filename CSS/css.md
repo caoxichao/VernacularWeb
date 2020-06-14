@@ -69,3 +69,10 @@ p{
 	盒模型分为标准盒模型和IE的盒模型
 	标准盒模型：盒模型的大小是content的大小(box-sizing:content-box|border-box|inherit)
 	IE盒模型：盒模型的大小是content+padding+padding的大小
+#### Flex布局
+- flex-direction:决定主轴的方向(即项目的排列方向)。row|row-reverse|column|column-reverse
+- flex-warp:默认情况下，项目都排列在一条线上。定义如果一条轴线上排不下，如何换行。nowarp|warp|warp-reverse
+- flex-flow:是flex-direction和flex-warp属性的简写形式，默认值为row nowarp;
+- justify-content:定义了项目在主轴上的对齐方式。flex-start|flex-end|center|space-between|space-around
+- align-items:定义项目在交叉轴上如何对齐。flex-start|flex-end|center|baseline|stretch
+- align-content:定义了多跟轴线的对齐方式，如果项目只有一根轴线，该属性不起作用。flex-start|flex-end|center|space-between|space-around|stretch
